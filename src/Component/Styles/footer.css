@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.footer-wrapper{
+    width: 100%;
+}
+.footer-header-background{
+    width: 100%;
+    background-image: url(https://www.dottholidays.com/assets/images/blogbg.jpg);
+    /* background-repeat: no-repeat; */
+    object-fit: cover;
+}
+.footer-header-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-header-text p{
+    color: orangered;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.footer-header-text h4{
+    color:white;
+    font-size: 40px;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+.footer-section{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-section-image{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 15px;
+}
+.footer-section-link img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.link-text{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.footer-section-image p{
+    margin-top: 10px;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-link-text{
+    text-decoration: none;
+    background-color: orangered;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.footer-contact{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid rgba(156, 153, 153, 0.256);
+    padding-bottom: 35px;
+}
+.all-footer{
+    width: 100%;
+    background-color: black;
+    padding-top: 43px;
+}
+.footer-contact1{
+    line-height: 26px;
+}
+.footer-contact1 h4{
+    color: orangered;
+}
+.footer-contact1 p{
+    color: white;
+    opacity: 0.7;
+}
+.footer-contact-phone{
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-contact-phone1{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    color: white;
+}
+.footer-branch1{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid rgba(156, 153, 153, 0.256);
+    margin-top: 17px;
+}
+.footer-branch1-unorderlist{
+    display: flex;
+    margin-bottom: 17px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/* .footer-List{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.footer-branch1-text{
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+}
+.footer-branch1-link{
+    margin: 0px 10px;
+    padding-top: 2px;
+}
+.branch{
+    color: white;
+}
+.footer-copyright-developed{
+    width: 100%;
+    background-color: rgb(70, 68, 68);
+}
+.footer-copyright-container{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 0px;
+}
+.footer-copyright{
+    color: white;
+    font-size: 12px;
+}
+.footer-name{
+    color: orangered;
+    text-decoration: none;
+}
+@media screen and (max-width:700px){
+    .footer-section{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1200px){
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-contact-phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-contact1 h4{
+        text-align: center;
+    }
+    .footer-contact1 p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:641px){
+    .footer-copyright-container{
+        flex-direction: column;
+    }
+    .footer-copyright{
+        margin-bottom: 15px;
+    }
+}

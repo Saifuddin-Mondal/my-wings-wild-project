@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.Wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrapper-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* box-shadow: 0px 90px 5px rgb(89, 87, 87); */
+}
+
+.nav {
+    width: 100%;
+    z-index: 11;
+}
+
+.swiper-container {
+    width: 100%;
+    /* box-shadow: 0px 5px 5px black; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* height: 100vh; */
+    z-index: -1;
+}
+
+.swiper-text p {
+    color: orangered;
+    z-index: 11;
+    font-size: 25px;
+}
+
+.swiper-img {
+    /* height: 100vh; */
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.swiper-img img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.swiper-text {
+    position: absolute;
+    color: orangered;
+    bottom: 200px;
+    right: 150px;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wrapper-container .slick-dots {
+    bottom: auto;
+    /* Reset the bottom position */
+    bottom: 48px;
+    /* Position the dots above the slider */
+}
+
+.wrapper-container .slick-dots li button:before {
+    font-size: 17px;
+    /* Increase the size of the dots */
+}
+
+.wrapper-container .slick-dots li.slick-active button:before {
+    color: #ff0000;
+    /* Change the color of the active dot */
+}
+
+.popular-box {
+    width: 100%;
+    background-color: rgb(51, 49, 49);
+    box-shadow: rgba(4, 4, 4, 0.4) -2px -62px 19px;
+    padding-bottom: 69px;
+}
+
+.popular-container {
+    width: 75%;
+    margin: auto;
+}
+
+.popular p {
+    color: red;
+    padding-top: 10px;
+}
+
+.popular h1 {
+    color: white;
+}
+
+.popular-slide {
+    width: 100%;
+}
+
+.popular-slide-all {
+    width: 100%;
+}
+
+.popular-sl-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-sl-image-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 40px;
+    padding: 10px;
+    /* gap: 10px; */
+}
+
+
+.popular-expolor {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: rgba(74, 243, 62, 0.7);
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-clip: content-box;
+    /* display: none; */
+    /* transition:all 2s; */
+}
+
+.popular-sl-image:hover .popular-expolor {
+    top: 0;
+}
+
+.popular-slide-all:hover .popular-last-text {
+    display: none;
+}
+
+.popular-expolor-text {
+    text-decoration: none;
+    color: white;
+}
+
+.popular-expolor p {
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.popular-explore-link {
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.explore {
+    margin-top: 120px;
+}
+
+.popular-last-text {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .popular-slide-all:nth-child(even) .popular-sl-image-img{
+    transform: translateY(30px);
+    margin-top: 20px;
+} */
+ .even-slide{
+    margin-top: 30px;
+ }
+
+.budject-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 195px;
+}
+
+.budject-slide {
+    width: 100%;
+}
+
+.budject-text-image {
+    width: 100%;
+}
+
+.budject-image {
+    width: 100%;
+    position: relative;
+}
+
+.budject-image img {
+    width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+    padding: 10px;
+    height: 400px;
+}
+.budject-text-cont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(130, 0, 251, 0.6);
+    padding: 10px;
+    background-clip: content-box;
+}
+.budject-text-image:hover .budject-text-cont{
+    top:0;
+}
+.budject-text-heade{
+    color: white;
+    font-size: 19px;
+}
+.budject-text-heade-link{
+    color:blue;
+    background-color: white;
+    padding: 8px 13px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.budject-header h5 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.budject-text p {
+    color: red;
+    font-size: 20px;
+}
+
+.budject-text h4 {
+    margin-top: 10px;
+    font-size: 37px;
+}
+
+.tour-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 37px;
+}
+
+.tour-header {
+    width: 100%;
+}
+
+.tour-image {
+    width: 100%;
+}
+
+.tour-image-src {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    perspective: 1000px;
+}
+
+.imgq {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(0);
+    /* transition: all 0.5s; */
+}
+.tour-slider-rotate{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: rgb(133, 23, 236);
+    transform: rotateY(90deg);
+    transition: all 0.5s;
+}
+.tour-slider-head{
+    color: white;
+    font-size: 19px;
+}
+.tour-slider-rotate p{
+    line-height: 28px;
+}
+.tour-slider-link-exp{
+    text-decoration: none;
+    padding: 8px 13px;
+    color: rgb(44, 44, 243);
+    background-color: white;
+
+}
+
+.tour-image-src:hover .imgq{
+    transform: rotateY(90deg);
+}
+
+.tour-image-src:hover .tour-slider-rotate{
+    transform: rotateY(0deg);
+}
+
+.tour-header p {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.tour-header h3 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+.tour-image-src img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.client-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 37px;
+    margin-bottom: 58px;
+    height: 505px;
+}
+
+/* .client-wrapper{
+    width: 100%;
+} */
+
+.client-header p {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.client-header h4 {
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.client-slider {
+    width: 100%;
+}
+
+.client-all {
+    width: 99%;
+    padding-bottom: 60px;
+    position: relative;
+    margin: 0px 16px;
+}
+
+.client-text {
+    width: 92%;
+    height: 350px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+
+}
+
+.client-text p {
+    width: 100%;
+    padding: 18px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.client-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 298px;
+    right: 226px;
+}
+.Whatsapp-Phone{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 9999;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media screen and (max-width : 600px) {
+    .whatsapp-img,.phone-img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .client-text {
+        height: 450px;
+    }
+
+    .client-details {
+        top: 396px;
+        right: 154px;
+    }
+
+    .client-container {
+        height: 560px;
+    }
+}
+
+@media screen and (max-width : 435px) {
+    .client-text {
+        height: 480px;
+    }
+
+    .client-details {
+        top: 432px;
+        right: 123px;
+    }
+
+    .client-container {
+        height: 610px;
+    }
+}
+
+@media screen and (max-width : 1076px) {
+    .swiper-container {
+        height: 1100px;
+    }
+
+    .swiper-img img {
+        height: 1100px;
+    }
+
+    .wrapper-container {
+        height: 1100px;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .swiper-container {
+        height: 900px;
+    }
+
+    .swiper-img img {
+        height: 900px;
+    }
+
+    .wrapper-container {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .swiper-container {
+        height: 700px;
+    }
+
+    .swiper-img img {
+        height: 700px;
+    }
+
+    .wrapper-container {
+        height: 700px;
+    }
+
+    .swiper-text {
+        bottom: 107px;
+        right: 19px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .swiper-container {
+        height: 590px;
+    }
+
+    .swiper-img img {
+        height: 590px;
+    }
+
+    .wrapper-container {
+        height: 590px;
+    }
+}
